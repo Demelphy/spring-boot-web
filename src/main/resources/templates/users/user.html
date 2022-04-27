@@ -6,6 +6,7 @@
 	</head>
 	<body>
 		<h1 th:text="${title}">User</h1>
+		<span th:text="'Current date: ' + ${currentDate}"></span>
 		<br />
 		<span th:if="${user.email}" th:text="'Email: ' + ${user.email}"></span>
 		<span th:if="${user.email == null}" th:text="'Email: Unknown'"></span>

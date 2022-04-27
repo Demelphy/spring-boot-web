@@ -6,6 +6,8 @@
 	</head>
 	<body>
 		<h1 th:text="${title}">User</h1>
+		<span th:text="'Current date: ' + ${currentDate}"></span>
+		<br />
 		<div th:if="${users.isEmpty}">We don't have users to show</div>
 		<div th:if="${!users.isEmpty}">
 			<table border="1">

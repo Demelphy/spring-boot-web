@@ -6,7 +6,10 @@
 	</head>
 	<body>
 		<h1 th:text="${title}">Hi Spring!</h1>
+		<span th:text="'Current date: ' + ${currentDate}"></span>
+		<br />
 		<a th:href="@{/user}">User Info</a>
+		<br />
 		<a th:href="@{/user/list}">Users List</a>
 	</body>
 </html>
