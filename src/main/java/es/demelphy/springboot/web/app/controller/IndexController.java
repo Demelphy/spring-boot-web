@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class IndexController extends BaseController {
 
+	@Value("${indexController.index.title}")
+	private String indexTitle;
+	
 	@GetMapping({"/index", "/", "", "home"})
 	public String index(Model model) {
 		model.addAttribute("title", "Welcome");
