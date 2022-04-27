@@ -3,16 +3,19 @@
 	<head>
 		<title>Index</title>
 		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"></link>
 	</head>
 	<body>
-		<h1 th:text="${title}">Hi Spring!</h1>
+		<h1 class="color-blue" th:text="${title}">Hi Spring!</h1>
+		<img th:src="@{/images/CorazonSoso_112.png}"></img>
+		<br />
 		<span th:text="'Current date: ' + ${currentDate}"></span>
 		<br />
 		<a th:href="@{/user}">User Info</a>
 		<br />
 		<a th:href="@{/user/list}">Users List</a>
 		<br />
-		<h3>RequestParam</h3>
+		<h3 class="color-green">RequestParam</h3>
 		<ul>
 			<li>
 				<a th:href="@{/rp-single(text='Hello sweety!')}">Saying "Hello sweety!"</a>
@@ -21,7 +24,7 @@
 				<a th:href="@{/rp-mixed(firstName='Demel', lastName='Master Phy')}">Sending my name</a>
 			</li>
 		</ul>
-		<h3>PathVariable</h3>
+		<h3 class="color-green">PathVariable</h3>
 		<ul>
 			<li>
 				<a th:href="@{/pv-single/} + 'Hello dear!'">Saying "Hello dear!"</a>
