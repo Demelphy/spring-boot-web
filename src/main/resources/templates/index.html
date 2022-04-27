@@ -11,5 +11,24 @@
 		<a th:href="@{/user}">User Info</a>
 		<br />
 		<a th:href="@{/user/list}">Users List</a>
+		<br />
+		<h3>RequestParam</h3>
+		<ul>
+			<li>
+				<a th:href="@{/rp-single(text='Hello sweety!')}">Saying "Hello sweety!"</a>
+			</li>
+			<li>
+				<a th:href="@{/rp-mixed(firstName='Demel', lastName='Master Phy')}">Sending my name</a>
+			</li>
+		</ul>
+		<h3>PathVariable</h3>
+		<ul>
+			<li>
+				<a th:href="@{/pv-single/} + 'Hello dear!'">Saying "Hello dear!"</a>
+			</li>
+			<li>
+				<a th:href="@{/pv-mixed/} + 'Skaw' + '/' + 'Master Phy'">Sending my love's name</a>
+			</li>
+		</ul>
 	</body>
 </html>
