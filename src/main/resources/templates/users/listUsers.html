@@ -22,7 +22,7 @@
 						<th th:text="${user.lastName}"></th>
 						
 						<th th:if="${user.email}" th:text="${user.email}"></th>
-						<th th:if="${user.email == null}" th:text="No informado"></th>
+						<th th:if="${user.email == null}">Unknown</th>
 					</tr>
 				</tbody>
 			</table>
