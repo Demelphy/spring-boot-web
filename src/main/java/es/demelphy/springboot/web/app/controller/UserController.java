@@ -23,4 +23,25 @@ public class UserController {
 		
 		return "/users/user";
 	}
+	
+	
+	@RequestMapping("/list")
+	public String getUsersList(Model model) {
+		List<User> users = new ArrayList<>();
+		User user = new User("Demel", "Master Phy");
+		user.setEmail("demelmasterphy@mail.com");
+		users.add(user);
+		user = new User("Skaw", "Master Phy");
+		user.setEmail("skawmasterphy@mail.com");
+		users.add(user);
+		user = new User("Tony", "Master Phy");
+		users.add(user);
+		user = new User("Lloru", "Master Phy");
+		users.add(user);
+		
+		model.addAttribute("title", "Users List");
+		model.addAttribute("users", users);
+		
+		return "/users/listUsers";
+	}
 }
