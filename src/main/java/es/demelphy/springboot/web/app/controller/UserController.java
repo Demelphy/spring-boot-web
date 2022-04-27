@@ -11,7 +11,7 @@ import es.demelphy.springboot.web.app.model.User;
 
 @Controller
 @RequestMapping("/user")
-public class UserController {
+public class UserController extends BaseController {
 
 	@RequestMapping
 	public String getUser(Model model) {
@@ -44,4 +44,6 @@ public class UserController {
 		
 		return "/users/listUsers";
 	}
+	
+	
 }
