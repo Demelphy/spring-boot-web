@@ -6,7 +6,7 @@ import org.springframework.context.annotation.PropertySources;
 
 @Configuration
 @PropertySources({
-	@PropertySource("classpat:controller.properties")
+	@PropertySource("classpath:controller.properties")
 })
 public class ControllerPropertiesConfig {
 

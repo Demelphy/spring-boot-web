@@ -18,19 +18,19 @@
 		<h3 class="color-green">RequestParam</h3>
 		<ul>
 			<li>
-				<a th:href="@{/rp-single(text='Hello sweety!')}">Saying "Hello sweety!"</a>
+				<a th:href="@{/app/rp-single(text='Hello sweety!')}">Saying "Hello sweety!"</a>
 			</li>
 			<li>
-				<a th:href="@{/rp-mixed(firstName='Demel', lastName='Master Phy')}">Sending my name</a>
+				<a th:href="@{/app/rp-mixed(firstName='Demel', lastName='Master Phy')}">Sending my name</a>
 			</li>
 		</ul>
 		<h3 class="color-green">PathVariable</h3>
 		<ul>
 			<li>
-				<a th:href="@{/pv-single/} + 'Hello dear!'">Saying "Hello dear!"</a>
+				<a th:href="@{/app/pv-single/} + 'Hello dear!'">Saying "Hello dear!"</a>
 			</li>
 			<li>
-				<a th:href="@{/pv-mixed/} + 'Skaw' + '/' + 'Master Phy'">Sending my love's name</a>
+				<a th:href="@{/app/pv-mixed/} + 'Skaw' + '/' + 'Master Phy'">Sending my love's name</a>
 			</li>
 		</ul>
 	</body>
